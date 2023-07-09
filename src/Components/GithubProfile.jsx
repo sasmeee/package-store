@@ -17,7 +17,7 @@ const GithubProfile = ({ name }) => {
     <div>
       {gitPic ? (
         <img
-          className="w-16 mx-auto rounded-lg"
+          className="w-16 mx-auto rounded-full"
           src={gitPic.avatar_url}
           alt="Avatar"
         />
