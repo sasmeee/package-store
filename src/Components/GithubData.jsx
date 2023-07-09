@@ -31,7 +31,7 @@ const GithubData = ({ userName }) => {
               alt="Avatar"
             />
             <p className="font-bold tracking-wider text-center"> {githubData.name} </p>
-            <p>{githubData.bio}</p>
+            <p className="text-center" >{githubData.bio}</p>
           </div>
           <div className="whitespace-nowrap flex items-center justify-center gap-2">
             <LuUsers />
