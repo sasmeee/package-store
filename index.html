@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Package Store</title>
     <meta name="description" content="Explore APIs and Packages" />
+    
+    <meta property="og:title" content="Package Store" />
+    <meta property="og:description" content="Explore APIs and Packages" />
+    <meta property="og:image" content="/thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Package Store" />
+    <meta name="twitter:description" content="Explore APIs and Packages" />
+    <meta name="twitter:image" content="/thumbnail.png" />
+    <meta property="og:site_name" content="Package Store" />
+    <meta property="og:type" content="website" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +31,13 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script>
+      var currentUrl = window.location.href;
+      document
+        .querySelector('meta[property="og:url"]')
+        .setAttribute("content", currentUrl);
+    </script>
   </head>
   <body>
     <div id="root"></div>
