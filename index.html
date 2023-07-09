@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Package Store</title>
     <meta name="description" content="Explore APIs and Packages" />
-    
+
     <meta property="og:title" content="Package Store" />
     <meta property="og:description" content="Explore APIs and Packages" />
     <meta property="og:image" content="/thumbnail.png" />
@@ -31,16 +31,18 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
-    <script>
-      var currentUrl = window.location.href;
-      document
-        .querySelector('meta[property="og:url"]')
-        .setAttribute("content", currentUrl);
-    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentUrl = window.location.href;
+        document
+          .querySelector('meta[property="og:url"]')
+          .setAttribute("content", currentUrl);
+      });
+    </script>
   </body>
 </html>
